@@ -1,0 +1,1 @@
+"use strict";var app=angular.module("myApp",["ui.router","fzk.directive"]);app.config(["$urlRouterProvider","$stateProvider",function(r,e){r.otherwise("loginOrRegister/login")}]);

@@ -1,0 +1,43 @@
+<style>
+    .left {
+        margin-left: 10%;
+    }
+
+    .top-padding {
+        margin-top: 20px;
+    }
+
+    .width300px {
+        width: 300px;
+    }
+
+    .div-inline {
+        display: inline;
+    }
+</style>
+<div style="margin:0 auto;">
+    <h1 class="left">register</h1>
+
+    <div class="left">
+        <div username></div>
+        <div password value="data.password"></div>
+        <div class="top-padding">
+            <label for="confirm-password">confirm password</label>
+
+            <div class="input-group">
+                <div class="width300px" style="display: inline">
+                    <input id="confirm-password" type="password" class="form-control" style="width: 300px"
+                           placeholder="confirm password" ng-model="data.passwordConfirm">
+                </div>
+                <lable style="margin-left: 20px; color: red; line-height: 34px;">{{data.passwordMessage}}</lable>
+            </div>
+        </div>
+
+        <div style="margin-top: 25px; margin-left: 20px">
+            <button class="btn btn-danger" ng-click="func.goLogin()">去登录</button>
+            <a href="#loginOrRegister/login">
+                <small style="vertical-align: bottom; margin-left: 10px">已有账号去登录</small>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="bs-example" data-example-id="inverted-navbar">
+    <nav class="navbar navbar-inverse">
+        <div style="margin-left: 15%">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img ng-src="pic/main1.jpg" style="height: 55px">
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed">
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <div class="collapse navbar-collapse" style="margin-left: 15%">
+                    <ul class="nav navbar-nav">
+                        <li class="{{menu.class}}" ng-repeat="menu in data.menus">
+                            <a href="javascrip:void(0)" ng-click="func.menuOnClick($index)">{{menu.value}}</a>
+                        </li>
+                    </ul>
+                    <img ng-src="pic/main1.jpg" style="height: 55px; margin-left: 300px">
+                    <a style="color: white">{{data.username}}</a>
+                    <a style="color: white" href="javascript:void(0)" ng-click="func.logout()">退出</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div ui-view></div>
